@@ -1,0 +1,19 @@
+.container-information {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), #e2deda 10%, #e2deda 88%, rgba(0, 0, 0, 0.2));
+}
+
+.image {
+    text-align: center;
+}
+
+.content-text {
+    width: 30%;
+    font-weight: 500;
+    font-size: 1.8rem;
+}

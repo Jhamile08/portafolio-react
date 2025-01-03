@@ -1,0 +1,28 @@
+[
+    {
+        "img": "/public/rainbow-high-quality-4k-ultra-hd-hdr-free-photo.jpg",
+        "title": "suppliers",
+        "lenguages": [
+            "Html",
+            "Css",
+            "javascript",
+            "Java Spring boot",
+            "Jwt"
+        ],
+        "description": "a portfolio for a printer supplies company creating its own admin to create its own products, implementing Java with Spring Boot and Mysql.",
+        "linkGit": "link",
+        "linkWeb": "Web"
+    },
+    {
+        "img": "/public/rainbow-high-quality-4k-ultra-hd-hdr-free-photo.jpg",
+        "title": "suppliers",
+        "lenguages": [
+            "React",
+            "Java",
+            "javascript"
+        ],
+        "description": "loremloremlorem",
+        "linkGit": "link",
+        "linkWeb": "Web"
+    }
+]

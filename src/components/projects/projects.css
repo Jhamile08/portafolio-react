@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), #e2deda 10%, #e2deda 88%, rgba(0, 0, 0, 0.2));
+    height: 100vh;
+}
+
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.project-card {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 25%;
+}
+
+.content-card div ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+
+.social-link {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10%;
+    background-color: black;
+    color: wheat;
+    gap: 10px;
+}
+
+.lenguagues {
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.react-style {
+    background-color: rgb(1, 107, 107);
+}
+
+.java-style {
+    background-color: rgb(86, 61, 126);
+}
+
+.javascript-style {
+    background-color: rgb(134, 150, 41);
+}

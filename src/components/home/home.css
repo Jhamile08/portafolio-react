@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour:SCAN@-15&display=swap');
+
+.container-home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    background-color: #282828;
+}
+
+.content-home {
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex: 1;
+    gap: 50%;
+}
+
+.typing-demo {
+    font-family: "Sixtyfour", serif;
+    width: 70%;
+    animation: typing 2s steps(30), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 2em;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
