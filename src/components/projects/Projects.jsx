@@ -1,23 +1,35 @@
 import React from 'react'
 import './projects.css'
 import data from '../../data/data.json';
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 const languageClasses = {
     react: "react-style",
     java: "java-style",
     javascript: "javascript-style",
+    html: "html-style",
+    css: "css-style",
+    "spring boot": "spring_boot-style",
+    "spring security": "spring_security-style",
+    "ruby on rails": "ruby-on-rails-style",
 };
 
 function Projects() {
+    const [isVisible, elementRef] = useScrollAnimation();
     return (
-        <div className='container'>
-            <div className="container-cards">
+        <div id='projects' className='container'>
+            <div className={`container-cards effectScroll ${isVisible ? 'visible' : ''}`} ref={elementRef}>
                 <h2>Pojects</h2>
                 {data.map((item, index) => (
                     <div key={index} className="project-card">
                         <div>
-                            <img src={item.img} alt={item.title} style={{ width: '500px', height: '300px', borderRadius: '10px' }} />
-
+                            <iframe src={item.dominio} frameborder="0" style={{ width: '600px', height: '450px', borderRadius: '10px', objectFit: 'cover' }} ></iframe>
+                            {/* <iframe
+                                src=
+                                title={item.title}
+                                style="width: 100%; height: 500px; border: none;"
+                                loading="lazy"
+                            ></iframe> */}
                         </div>
                         <div className='content-card'>
                             <h3>{item.title}</h3>

@@ -1,12 +1,12 @@
 .container-information {
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 10%;
 
     background: linear-gradient(to right, rgba(0, 0, 0, 0.2), #e2deda 10%, #e2deda 88%, rgba(0, 0, 0, 0.2));
+
 }
+
 
 .image {
     text-align: center;
@@ -16,4 +16,21 @@
     width: 30%;
     font-weight: 500;
     font-size: 1.8rem;
+}
+
+/* Animación inicial */
+.content-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 4s ease-out;
+}
+
+/* Cuando el elemento es visible */
+.content-information.visible {
+    opacity: 1;
+    transform: translateY(0);
 }

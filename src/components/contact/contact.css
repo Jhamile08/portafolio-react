@@ -1,0 +1,39 @@
+footer {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), #e2deda 10%, #e2deda 88%, rgba(0, 0, 0, 0.2));
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    width: 60%;
+}
+
+.container-footer hr {
+    width: 100%;
+
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.link-content {
+    display: flex;
+}
+
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.menu--black {
+    color: black;
+}
