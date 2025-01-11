@@ -20,8 +20,8 @@
 
 .typing-demo {
     font-family: "Sixtyfour", serif;
-    width: 70%;
-    animation: typing 2s steps(30), blink .5s step-end infinite alternate;
+    width: 52%;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;

@@ -30,7 +30,7 @@ function Home() {
             <Header />
             <div className='content-home'>
                 <div className="wrapper">
-                    <div className="typing-demo">Isasasaselive in using techology for a improve</div>
+                    <div className="typing-demo">Welcome to the portafolio!!</div>
                 </div>
                 <div>
                     <p>{lastLogin}</p>
