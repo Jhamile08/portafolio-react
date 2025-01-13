@@ -37,3 +37,9 @@ footer {
 .menu--black {
     color: black;
 }
+
+@media (max-width: 1000px) {
+    .container-footer {
+        width: 100%;
+    }
+}
