@@ -4,16 +4,16 @@
     gap: 10%;
 
     background: linear-gradient(to right, rgba(0, 0, 0, 0.2), #e2deda 10%, #e2deda 88%, rgba(0, 0, 0, 0.2));
-
 }
 
 
 .image {
     text-align: center;
+    width: 40%;
 }
 
 .content-text {
-    width: 30%;
+    width: 40%;
     font-weight: 500;
     font-size: 1.8rem;
 }
@@ -33,4 +33,32 @@
 .content-information.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.fade-in-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 1000px) {
+    .content-information {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-text {
+
+        width: 70%;
+        text-align: center;
+    }
+
+    .image {
+        text-align: center;
+        width: 65%;
+    }
+
+
 }

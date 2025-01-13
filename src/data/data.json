@@ -4,31 +4,29 @@
         "img": "/public/rainbow-high-quality-4k-ultra-hd-hdr-free-photo.jpg",
         "title": "suppliers",
         "lenguages": [
-            "Html",
-            "Html",
-            "Ruby on rails",
+            "HTML",
+            "CSS",
             "javascript",
             "Java",
-            "Css",
             "Spring boot",
             "Spring security"
         ],
-        "description": "A portfolio for a printer supplies company creating its own admin to create its own products, implementing Java with Spring Boot and Mysql.",
-        "linkGit": "link",
-        "linkWeb": "Web"
+        "description": "Portfolio for a printer supplies company creating its own admin to create its own products, implementing Java with Spring Boot and Mysql.",
+        "linkGit": "https://github.com/Jhamile08/tonerink_spring_boot",
+        "linkWeb": "https://tonerinksas.com/"
     },
     {
-        "dominio": "https://tonerinksas.com/",
+        "dominio": "https://quizc-react.vercel.app/",
         "img": "/public/rainbow-high-quality-4k-ultra-hd-hdr-free-photo.jpg",
         "title": "suppliers",
         "lenguages": [
             "React",
             "Java",
-            "Javascript",
-            "Ruby on rails"
+            "Spring boot",
+            "Javascript"
         ],
-        "description": "A portfolio for a printer supplies company creating its own admin to create its own products, implementing Java with Spring Boot and Mysql.",
-        "linkGit": "link",
-        "linkWeb": "Web"
+        "description": "This project is a web application built with React as the frontend and Java Spring Boot as the backend. It allows users to manage and run tests efficiently, providing a user-friendly interface for creating, executing, and reviewing test results.",
+        "linkGit": "https://github.com/Jhamile08/quizc-react",
+        "linkWeb": "https://quizc-react.vercel.app/"
     }
 ]

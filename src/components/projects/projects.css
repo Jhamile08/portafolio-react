@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 55%;
+    width: 600px;
     gap: 3rem;
 }
 
@@ -24,6 +24,7 @@
 .project-card {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -109,15 +110,21 @@
 .container-habilities {
     background-color: #282828;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+}
+
+.container-habilities h1 {
+    color: white;
 }
 
 .content-habilities {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 8px;
+    padding: 3rem;
 
 }
 
@@ -139,4 +146,32 @@
 
 .content-habilities img:hover {
     transform: scale(1.1);
+}
+
+.iframe {
+    width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+    .iframe {
+        width: 380px;
+        height: 270px;
+    }
+
+    .content-card {
+        width: 360px;
+    }
+
+    .container-cards {
+        width: 100%;
+    }
+
+    .container-cards h2 {
+        padding-left: 10%;
+    }
+
+
 }

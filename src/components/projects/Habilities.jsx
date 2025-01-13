@@ -6,6 +6,7 @@ function habilities() {
     const [isVisible, elementRef] = useScrollAnimation();
     return (
         <div className='container-habilities'>
+            <h1 >Skills</h1>
             <div className={`content-habilities effectScroll ${isVisible ? 'visible' : ''}`} ref={elementRef}>
                 <img src="/photos/html.png" alt="" />
                 <img src="/photos/css-3.png" alt="" />

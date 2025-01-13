@@ -40,3 +40,10 @@
         border-color: transparent
     }
 }
+
+
+@media (max-width: 1000px) {
+    .content-home {
+        padding: 0;
+    }
+}

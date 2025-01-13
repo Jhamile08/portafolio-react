@@ -19,17 +19,11 @@ function Projects() {
     return (
         <div id='projects' className='container'>
             <div className={`container-cards effectScroll ${isVisible ? 'visible' : ''}`} ref={elementRef}>
-                <h2>Pojects</h2>
+                <h2>Projects</h2>
                 {data.map((item, index) => (
                     <div key={index} className="project-card">
                         <div>
-                            <iframe src={item.dominio} frameborder="0" style={{ width: '600px', height: '450px', borderRadius: '10px', objectFit: 'cover' }} ></iframe>
-                            {/* <iframe
-                                src=
-                                title={item.title}
-                                style="width: 100%; height: 500px; border: none;"
-                                loading="lazy"
-                            ></iframe> */}
+                            <iframe className='iframe' src={item.dominio} frameborder="0" ></iframe>
                         </div>
                         <div className='content-card'>
                             <h3>{item.title}</h3>

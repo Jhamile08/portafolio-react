@@ -9,7 +9,7 @@ function aboutMe() {
             <div className={`content-information ${isVisible ? 'visible' : ''}`}
                 ref={elementRef}>
                 <div className='image'>
-                    <img src="/photos/rainbow-high-quality-4k-ultra-hd-hdr-free-photo.jpg" alt="" style={{ width: '600px', height: 'auto', borderRadius: '10px' }} className="fade-in-image" />
+                    <img src="/photos/rainbow-high-quality-4k-ultra-hd-hdr-free-photo.jpg" alt="" className="fade-in-image" />
                     <p>Andrea Dominguez</p>
                     <p>Fullstack junior developer</p>
                 </div>
