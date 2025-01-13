@@ -10,8 +10,6 @@ function Contact() {
                 </div>
                 <hr />
                 <div className='social-media'>
-                    <img src="" alt="s" />
-                    <img src="" alt="s" />
                 </div>
             </div>
 
