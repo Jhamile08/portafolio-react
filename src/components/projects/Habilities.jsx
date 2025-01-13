@@ -7,18 +7,18 @@ function habilities() {
     return (
         <div className='container-habilities'>
             <div className={`content-habilities effectScroll ${isVisible ? 'visible' : ''}`} ref={elementRef}>
-                <img src="/public/photos/html.png" alt="" />
-                <img src="/public/photos/css-3.png" alt="" />
-                <img src="/public/photos/java-script.png" alt="" />
-                <img src="/public/photos/java.png" alt="" />
-                <img src="/public/photos/sql-server.png" alt="" />
-                <img src="/public/photos/jewelry.png" alt="" />
-                <img src="/public/photos/science.png" alt="" />
-                <img src="/public/photos/social(1).png" alt="" />
-                <img src="/public/photos/jira.png" alt="" />
-                <img src="/public/photos/azure.png" alt="" />
-                <img src="/public/photos/social.png" alt="" />
-                <img src="/public/photos/united-kingdom(1).png" alt="" />
+                <img src="/photos/html.png" alt="" />
+                <img src="/photos/css-3.png" alt="" />
+                <img src="/photos/java-script.png" alt="" />
+                <img src="/photos/java.png" alt="" />
+                <img src="/photos/sql-server.png" alt="" />
+                <img src="/photos/jewelry.png" alt="" />
+                <img src="/photos/science.png" alt="" />
+                <img src="/photos/social(1).png" alt="" />
+                <img src="/photos/jira.png" alt="" />
+                <img src="/photos/azure.png" alt="" />
+                <img src="/photos/social.png" alt="" />
+                <img src="/photos/united-kingdom(1).png" alt="" />
 
             </div>
         </div>
