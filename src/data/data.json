@@ -16,7 +16,7 @@
         "linkWeb": "https://tonerinksas.com/"
     },
     {
-        "dominio": "https://quizc-react.vercel.app/",
+        "dominio": "https://quizc-react.onrender.com/",
         "img": "/public/rainbow-high-quality-4k-ultra-hd-hdr-free-photo.jpg",
         "title": "Test",
         "lenguages": [
@@ -27,6 +27,6 @@
         ],
         "description": "This project is a web application built with React as the frontend and Java Spring Boot as the backend. It allows users to manage and run tests efficiently, providing a user-friendly interface for creating, executing, and reviewing test results.",
         "linkGit": "https://github.com/Jhamile08/quizc-react",
-        "linkWeb": "https://quizc-react.vercel.app/"
+        "linkWeb": "https://quizc-react.onrender.com/"
     }
 ]

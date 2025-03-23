@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import './home.css'
 import Header from '../header/Header.jsx'
 
@@ -30,7 +30,7 @@ function Home() {
             <Header />
             <div className='content-home'>
                 <div className="wrapper">
-                    <div className="typing-demo">Welcome to the portafolio!!</div>
+                    <div className="typing-demo">Welcome!!</div>
                 </div>
                 <div>
                     <p>{lastLogin}</p>

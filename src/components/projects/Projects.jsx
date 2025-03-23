@@ -1,4 +1,3 @@
-import React from 'react'
 import './projects.css'
 import data from '../../data/data.json';
 import useScrollAnimation from '../../hooks/useScrollAnimation';
@@ -23,7 +22,7 @@ function Projects() {
                 {data.map((item, index) => (
                     <div key={index} className="project-card">
                         <div>
-                            <iframe className='iframe' src={item.dominio} frameborder="0" ></iframe>
+                            <iframe className='iframe' src={item.dominio} frameBorder="0" ></iframe>
                         </div>
                         <div className='content-card'>
                             <h3>{item.title}</h3>
@@ -41,8 +40,8 @@ function Projects() {
                                 <p>{item.description}</p>
                             </div>
                             <div className='social-link'>
-                                <a href="{item.linkGit}"><i class="fa-brands fa-github"></i>  Git hub</a>
-                                <a href="{item.linkGit}"><i class="fa-solid fa-globe"></i>  Web page</a>
+                                <a href={item.linkGit} target='blank'><i className="fa-brands fa-github"></i>  Git hub</a>
+                                <a href={item.linkWeb} target='blank'><i className="fa-solid fa-globe"></i>  Web page</a>
                             </div>
 
                         </div>

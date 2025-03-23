@@ -1,9 +1,8 @@
-import React from 'react'
 import './aboutMe.css'
-import useScrollAnimation from '../../hooks/useScrollAnimation';
+import UseScrollAnimation from '../../hooks/useScrollAnimation';
 
 function aboutMe() {
-    const [isVisible, elementRef] = useScrollAnimation();
+    const [isVisible, elementRef] = UseScrollAnimation();
     return (
         <div id='about-me' className='container-information'>
             <div className={`content-information ${isVisible ? 'visible' : ''}`}
