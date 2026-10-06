@@ -19,8 +19,8 @@ function Projects() {
     const [isVisible, elementRef] = useScrollAnimation();
     return (
         <div id='projects' className='container'>
-            <div className={`container-cards effectScroll ${isVisible ? 'visible' : ''}`} ref={elementRef}>
-                <h2>Projects</h2>
+            <h2>Projects</h2>
+            <div className={`container-cards`} ref={elementRef}>
                 {data.map((item, index) => (
                     <div key={index} className="project-card">
                         <div>
