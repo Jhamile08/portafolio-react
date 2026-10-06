@@ -1,6 +1,17 @@
 [
     {
-        "dominio": "https://tonerinksas.com/",
+        "dominio": "https://art-gallery-7zqd.onrender.com/",
+        "img": "/public/rainbow-high-quality-4k-ultra-hd-hdr-free-photo.jpg",
+        "title": "Gallery",
+        "lenguages": [
+            "React"
+        ],
+        "description": "This project is a landing page about medellin art, it was built with React and Vite, it is a responsive page also using cloudinary to store the images.",
+        "linkGit": "https://github.com/Jhamile08/gallery",
+        "linkWeb": "https://art-gallery-7zqd.onrender.com/"
+    },
+    {
+        "dominio": "https://tonerink-fronted.onrender.com",
         "img": "/public/rainbow-high-quality-4k-ultra-hd-hdr-free-photo.jpg",
         "title": "Suppliers",
         "lenguages": [
@@ -13,7 +24,7 @@
         ],
         "description": "Portfolio for a printer supplies company creating its own admin to create its own products, implementing Java with Spring Boot and Mysql.",
         "linkGit": "https://github.com/Jhamile08/tonerink_spring_boot",
-        "linkWeb": "https://tonerinksas.com/"
+        "linkWeb": "https://tonerink-fronted.onrender.com"
     },
     {
         "dominio": "https://quizc-react.onrender.com/",
