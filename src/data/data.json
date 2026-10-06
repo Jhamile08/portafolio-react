@@ -27,6 +27,39 @@
         "linkWeb": "https://tonerink-fronted.onrender.com"
     },
     {
+        "dominio": "https://hvgamingsolution.com",
+        "img": "/public/rainbow-high-quality-4k-ultra-hd-hdr-free-photo.jpg",
+        "title": "HV Gaming Solution",
+        "lenguages": [
+            "WordPress"
+        ],
+        "description": "This project is a landing page about gaming solutions, it was built with wordpress and saving images in cloudinary.",
+        "linkGit": "",
+        "linkWeb": "https://hvgamingsolution.com"
+    },
+    {
+        "dominio": "https://jhonstylemedellin.com",
+        "img": "/public/rainbow-high-quality-4k-ultra-hd-hdr-free-photo.jpg",
+        "title": "Jhon Style Medellin",
+        "lenguages": [
+            "WordPress"
+        ],
+        "description": "This project is a landing page about barber event built in wordpress with payment.",
+        "linkGit": "",
+        "linkWeb": "https://jhonstylemedellin.com"
+    },
+    {
+        "dominio": "https://thyria-palette-studio.lovable.app/",
+        "img": "/public/rainbow-high-quality-4k-ultra-hd-hdr-free-photo.jpg",
+        "title": "Thyria Studio",
+        "lenguages": [
+            "WordPress"
+        ],
+        "description": "This project is a portfolio website for a thyria studio.",
+        "linkGit": "",
+        "linkWeb": "https://thyria-palette-studio.lovable.app/"
+    },
+    {
         "dominio": "https://quizc-react.onrender.com/",
         "img": "/public/rainbow-high-quality-4k-ultra-hd-hdr-free-photo.jpg",
         "title": "Test",

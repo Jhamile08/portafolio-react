@@ -8,9 +8,11 @@ const languageClasses = {
     javascript: "javascript-style",
     html: "html-style",
     css: "css-style",
+    wordpress: "wordpress-style",
     "spring boot": "spring_boot-style",
     "spring security": "spring_security-style",
     "ruby on rails": "ruby-on-rails-style",
+
 };
 
 function Projects() {
