@@ -6,7 +6,10 @@
         "lenguages": [
             "React"
         ],
-        "description": "This project is a landing page about medellin art, it was built with React and Vite, it is a responsive page also using cloudinary to store the images.",
+        "description": {
+            "en": "This project is a landing page about medellin art, it was built with React and Vite, it is a responsive page also using cloudinary to store the images.",
+            "es": "Este proyecto es una landing page sobre el arte de Medellín, construida con React y Vite. Es una página responsive que además usa Cloudinary para almacenar las imágenes."
+        },
         "linkGit": "https://github.com/Jhamile08/gallery",
         "linkWeb": "https://art-gallery-7zqd.onrender.com/"
     },
@@ -23,7 +26,10 @@
             "Spring boot",
             "Spring security"
         ],
-        "description": "Portfolio for a printer supplies company creating its own admin to create its own products, implementing Java with Spring Boot and Mysql.",
+        "description": {
+            "en": "Portfolio for a printer supplies company creating its own admin to create its own products, implementing Java with Spring Boot and Mysql.",
+            "es": "Portafolio para una empresa de suministros de impresión, con su propio panel de administración para crear productos, implementado con Java, Spring Boot y MySQL."
+        },
         "linkGit": "https://github.com/Jhamile08/tonerink_spring_boot",
         "linkWeb": "https://tonerink-fronted.onrender.com"
     },
@@ -34,7 +40,10 @@
         "lenguages": [
             "WordPress"
         ],
-        "description": "This project is a landing page about gaming solutions, it was built with wordpress and saving images in cloudinary.",
+        "description": {
+            "en": "This project is a landing page about gaming solutions, it was built with wordpress and saving images in cloudinary.",
+            "es": "Este proyecto es una landing page sobre soluciones de gaming, construida con WordPress y guardando las imágenes en Cloudinary."
+        },
         "linkGit": "",
         "linkWeb": "https://hvgamingsolution.com"
     },
@@ -45,7 +54,10 @@
         "lenguages": [
             "WordPress"
         ],
-        "description": "This project is a landing page about barber event built in wordpress with payment.",
+        "description": {
+            "en": "This project is a landing page about barber event built in wordpress with payment.",
+            "es": "Este proyecto es una landing page sobre un evento de barbería, construida en WordPress con pasarela de pago."
+        },
         "linkGit": "",
         "linkWeb": "https://jhonstylemedellin.com"
     },
@@ -56,7 +68,10 @@
         "lenguages": [
             "WordPress"
         ],
-        "description": "This project is a portfolio website for a thyria studio.",
+        "description": {
+            "en": "This project is a portfolio website for a thyria studio.",
+            "es": "Este proyecto es un sitio web de portafolio para Thyria Studio."
+        },
         "linkGit": "",
         "linkWeb": "https://thyria-palette-studio.lovable.app/"
     },
@@ -70,7 +85,10 @@
             "Spring boot",
             "Javascript"
         ],
-        "description": "This project is a web application built with React as the frontend and Java Spring Boot as the backend. It allows users to manage and run tests efficiently, providing a user-friendly interface for creating, executing, and reviewing test results.",
+        "description": {
+            "en": "This project is a web application built with React as the frontend and Java Spring Boot as the backend. It allows users to manage and run tests efficiently, providing a user-friendly interface for creating, executing, and reviewing test results.",
+            "es": "Este proyecto es una aplicación web construida con React en el frontend y Java Spring Boot en el backend. Permite gestionar y ejecutar pruebas de forma eficiente, con una interfaz amigable para crear, ejecutar y revisar los resultados."
+        },
         "linkGit": "https://github.com/Jhamile08/quizc-react",
         "linkWeb": "https://quizc-react.onrender.com/"
     }

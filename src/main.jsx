@@ -6,13 +6,16 @@ import AboutMe from './components/information/AboutMe.jsx'
 import Projects from './components/projects/Projects.jsx'
 import Habilities from './components/projects/Habilities.jsx'
 import Contact from './components/contact/Contact.jsx'
+import { LanguageProvider } from './i18n/LanguageContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Home />
-    <AboutMe />
-    <Habilities />
-    <Projects />
-    <Contact />
+    <LanguageProvider>
+      <Home />
+      <AboutMe />
+      <Habilities />
+      <Projects />
+      <Contact />
+    </LanguageProvider>
   </StrictMode>,
 )

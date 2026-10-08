@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './projects.css'
 import data from '../../data/data.json';
 import useScrollAnimation from '../../hooks/useScrollAnimation';
+import { useLanguage } from '../../i18n/LanguageContext';
 
 const languageClasses = {
     react: "react-style",
@@ -18,12 +19,7 @@ const languageClasses = {
 
 const backendLanguages = ["java", "ruby on rails", "typescript"];
 
-const filters = [
-    { id: "all", label: "Todos" },
-    { id: "fullstack", label: "Full stack" },
-    { id: "landing", label: "Landing pages" },
-    { id: "wordpress", label: "WordPress" },
-];
+const filters = ["all", "fullstack", "landing", "wordpress"];
 
 function matchesFilter(item, filter) {
     const lenguages = item.lenguages.map((language) => language.toLowerCase());
@@ -39,19 +35,20 @@ function matchesFilter(item, filter) {
 function Projects() {
     const [isVisible, elementRef] = useScrollAnimation();
     const [activeFilter, setActiveFilter] = useState("all");
+    const { language, t } = useLanguage();
     const visibleProjects = data.filter((item) => matchesFilter(item, activeFilter));
 
     return (
         <div id='projects' className='container'>
-            <h2>Projects</h2>
+            <h2>{t.projects.title}</h2>
             <div className='project-filters'>
                 {filters.map((filter) => (
                     <button
-                        key={filter.id}
+                        key={filter}
                         type='button'
-                        className={`filter-button ${activeFilter === filter.id ? "active" : ""}`}
-                        onClick={() => setActiveFilter(filter.id)}
-                    >{filter.label}</button>
+                        className={`filter-button ${activeFilter === filter ? "active" : ""}`}
+                        onClick={() => setActiveFilter(filter)}
+                    >{t.projects.filters[filter]}</button>
                 ))}
             </div>
             <div className={`container-cards`} ref={elementRef}>
@@ -73,11 +70,11 @@ function Projects() {
                                 </ul>
                             </div>
                             <div className='description'>
-                                <p>{item.description}</p>
+                                <p>{item.description[language]}</p>
                             </div>
                             <div className='social-link'>
-                                <a href={item.linkGit} target='blank'><i className="fa-brands fa-github"></i>  Git hub</a>
-                                <a href={item.linkWeb} target='blank'><i className="fa-solid fa-globe"></i>  Web page</a>
+                                <a href={item.linkGit} target='blank'><i className="fa-brands fa-github"></i>  {t.projects.github}</a>
+                                <a href={item.linkWeb} target='blank'><i className="fa-solid fa-globe"></i>  {t.projects.web}</a>
                             </div>
 
                         </div>

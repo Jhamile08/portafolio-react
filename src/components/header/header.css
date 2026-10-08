@@ -28,3 +28,35 @@
     text-decoration: none;
     color: white;
 }
+/* Language switch */
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    list-style: none;
+}
+
+.language-button {
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    background-color: transparent;
+    color: inherit;
+    opacity: 0.55;
+    cursor: pointer;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.language-button:hover {
+    opacity: 0.85;
+}
+
+.language-button.active {
+    opacity: 1;
+    background-color: rgba(128, 128, 128, 0.35);
+}

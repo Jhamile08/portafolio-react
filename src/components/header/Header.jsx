@@ -1,8 +1,16 @@
 import React from 'react'
 import { Link } from "react-scroll";
 import './header.css'
+import { useLanguage } from '../../i18n/LanguageContext';
 
-function Header(className) {
+const languageOptions = [
+    { id: "es", label: "ES" },
+    { id: "en", label: "EN" },
+];
+
+function Header({ className = "" }) {
+    const { language, setLanguage, t } = useLanguage();
+
     return (
         <header className="header">
             <nav className="header__nav">
@@ -14,14 +22,25 @@ function Header(className) {
                 <div>
                     <ul className={`header__menu ${className}`}>
                         <Link to="about-me" smooth={true} duration={500}>
-                            About me
+                            {t.nav.aboutMe}
                         </Link>
                         <Link to="projects" smooth={true} duration={500}>
-                            projects
+                            {t.nav.projects}
                         </Link>
                         <Link to="contact" smooth={true} duration={500}>
-                            contact
+                            {t.nav.contact}
                         </Link>
+                        <li className="language-switch">
+                            {languageOptions.map((option) => (
+                                <button
+                                    key={option.id}
+                                    type="button"
+                                    className={`language-button ${language === option.id ? "active" : ""}`}
+                                    onClick={() => setLanguage(option.id)}
+                                    aria-pressed={language === option.id}
+                                >{option.label}</button>
+                            ))}
+                        </li>
                     </ul>
                 </div>
             </nav>

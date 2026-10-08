@@ -1,12 +1,14 @@
 import React from 'react'
 import './projects.css'
 import useScrollAnimation from '../../hooks/useScrollAnimation';
+import { useLanguage } from '../../i18n/LanguageContext';
 
 function habilities() {
     const [isVisible, elementRef] = useScrollAnimation();
+    const { t } = useLanguage();
     return (
         <div className='container-habilities'>
-            <h1 >Skills</h1>
+            <h1 >{t.habilities.title}</h1>
             <div className={`content-habilities effectScroll ${isVisible ? 'visible' : ''}`} ref={elementRef}>
                 <img src="/photos/html.png" alt="" />
                 <img src="/photos/css-3.png" alt="" />
