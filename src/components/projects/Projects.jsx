@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './projects.css'
 import data from '../../data/data.json';
 import useScrollAnimation from '../../hooks/useScrollAnimation';
@@ -15,13 +16,46 @@ const languageClasses = {
 
 };
 
+const backendLanguages = ["java", "ruby on rails", "typescript"];
+
+const filters = [
+    { id: "all", label: "Todos" },
+    { id: "fullstack", label: "Full stack" },
+    { id: "landing", label: "Landing pages" },
+    { id: "wordpress", label: "WordPress" },
+];
+
+function matchesFilter(item, filter) {
+    const lenguages = item.lenguages.map((language) => language.toLowerCase());
+    const hasReact = lenguages.includes("react");
+    const hasBackend = lenguages.some((language) => backendLanguages.includes(language));
+
+    if (filter === "fullstack") return hasReact && hasBackend;
+    if (filter === "landing") return hasReact && !hasBackend;
+    if (filter === "wordpress") return lenguages.includes("wordpress");
+    return true;
+}
+
 function Projects() {
     const [isVisible, elementRef] = useScrollAnimation();
+    const [activeFilter, setActiveFilter] = useState("all");
+    const visibleProjects = data.filter((item) => matchesFilter(item, activeFilter));
+
     return (
         <div id='projects' className='container'>
             <h2>Projects</h2>
+            <div className='project-filters'>
+                {filters.map((filter) => (
+                    <button
+                        key={filter.id}
+                        type='button'
+                        className={`filter-button ${activeFilter === filter.id ? "active" : ""}`}
+                        onClick={() => setActiveFilter(filter.id)}
+                    >{filter.label}</button>
+                ))}
+            </div>
             <div className={`container-cards`} ref={elementRef}>
-                {data.map((item, index) => (
+                {visibleProjects.map((item, index) => (
                     <div key={index} className="project-card">
                         <div>
                             <iframe className='iframe' src={item.dominio} frameBorder="0" ></iframe>
