@@ -201,6 +201,15 @@
     transform: scale(1.1);
 }
 
+.cover-image {
+    object-fit: contain;
+    object-position: center;
+    background-color: #f1efed;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 0.75rem;
+    box-sizing: border-box;
+}
+
 .iframe {
     display: block;
     width: 100%;

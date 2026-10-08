@@ -23,14 +23,22 @@ const backendLanguages = ["java", "ruby on rails"];
 const filters = ["all", "fullstack", "landing", "wordpress"];
 
 function matchesFilter(item, filter) {
+    if (filter === "all") return true;
+
     const lenguages = item.lenguages.map((language) => language.toLowerCase());
+
+    // El filtro de WordPress siempre se resuelve por tecnologia
+    if (filter === "wordpress") return lenguages.includes("wordpress");
+
+    // Un proyecto puede declarar su categoria y manda sobre la deteccion automatica
+    if (item.category) return item.category === filter;
+
     const hasReact = lenguages.includes("react");
     const hasBackend = lenguages.some((language) => backendLanguages.includes(language));
 
     if (filter === "fullstack") return hasReact && hasBackend;
     if (filter === "landing") return hasReact && !hasBackend;
-    if (filter === "wordpress") return lenguages.includes("wordpress");
-    return true;
+    return false;
 }
 
 function Projects() {
@@ -56,7 +64,9 @@ function Projects() {
                 {visibleProjects.map((item, index) => (
                     <div key={index} className="project-card">
                         <div>
-                            <iframe className='iframe' src={item.dominio} frameBorder="0" ></iframe>
+                            {item.cover
+                                ? <img className='iframe cover-image' src={item.cover} alt={item.title} loading='lazy' />
+                                : <iframe className='iframe' src={item.dominio} frameBorder="0" ></iframe>}
                         </div>
                         <div className='content-card'>
                             <h3>{item.title}</h3>

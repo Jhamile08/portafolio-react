@@ -16,7 +16,7 @@
     {
         "dominio": "https://tonerink-fronted.onrender.com",
         "img": "/public/rainbow-high-quality-4k-ultra-hd-hdr-free-photo.jpg",
-        "title": "Suppliers",
+        "title": "Tonerink",
         "lenguages": [
             "HTML",
             "CSS",
@@ -32,6 +32,24 @@
         },
         "linkGit": "https://github.com/Jhamile08/tonerink_spring_boot",
         "linkWeb": "https://tonerink-fronted.onrender.com"
+    },
+    {
+        "dominio": "https://packtrack.site/",
+        "cover": "https://res.cloudinary.com/dmjjvcznx/image/upload/v1791476564/Captura_desde_2026-10-08_11-22-35_kz5ibv.png",
+        "img": "/public/rainbow-high-quality-4k-ultra-hd-hdr-free-photo.jpg",
+        "title": "PackTrack",
+        "category": "fullstack",
+        "lenguages": [
+            "HTML",
+            "CSS",
+            "Ruby on Rails"
+        ],
+        "description": {
+            "en": "This project is a landing page about gaming solutions, it was built with wordpress and saving images in cloudinary.",
+            "es": "Este proyecto es una landing page sobre soluciones de gaming, construida con WordPress y guardando las imágenes en Cloudinary."
+        },
+        "linkGit": "",
+        "linkWeb": "https://packtrack.site/"
     },
     {
         "dominio": "https://hvgamingsolution.com",
