@@ -17,6 +17,8 @@ function habilities() {
                 <img src="/photos/sql-server.png" alt="" />
                 <img src="/photos/jewelry.png" alt="" />
                 <img src="/photos/science.png" alt="" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="48" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="48" />                
                 <img src="/photos/social(1).png" alt="" />
                 <img src="/photos/jira.png" alt="" />
                 <img src="/photos/azure.png" alt="" />

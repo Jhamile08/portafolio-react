@@ -66,13 +66,14 @@
         "img": "/public/rainbow-high-quality-4k-ultra-hd-hdr-free-photo.jpg",
         "title": "Thyria Studio",
         "lenguages": [
-            "WordPress"
+            "Typescript",
+            "React"
         ],
         "description": {
             "en": "This project is a portfolio website for a thyria studio.",
             "es": "Este proyecto es un sitio web de portafolio para Thyria Studio."
         },
-        "linkGit": "",
+        "linkGit": "https://github.com/Jhamile08/thyria",
         "linkWeb": "https://thyria-palette-studio.lovable.app/"
     },
     {

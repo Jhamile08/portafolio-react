@@ -10,6 +10,7 @@ const languageClasses = {
     javascript: "javascript-style",
     html: "html-style",
     css: "css-style",
+    typescript: "typescript-style",
     wordpress: "wordpress-style",
     "spring boot": "spring_boot-style",
     "spring security": "spring_security-style",
@@ -17,7 +18,7 @@ const languageClasses = {
 
 };
 
-const backendLanguages = ["java", "ruby on rails", "typescript"];
+const backendLanguages = ["java", "ruby on rails"];
 
 const filters = ["all", "fullstack", "landing", "wordpress"];
 

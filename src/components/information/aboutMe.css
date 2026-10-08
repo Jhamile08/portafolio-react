@@ -2,9 +2,16 @@
     padding: 30px 0px;
     height: 100%;
     display: flex;
-    gap: 10%;
+    flex-direction: column;
+    align-items: center;
 
     background: linear-gradient(to right, rgba(0, 0, 0, 0.2), #e2deda 10%, #e2deda 88%, rgba(0, 0, 0, 0.2));
+}
+
+.title-information {
+    font-size: 3rem;
+    margin: 0 0 2rem;
+    text-align: center;
 }
 
 
@@ -15,8 +22,50 @@
 
 .content-text {
     width: 40%;
-    font-weight: 500;
-    font-size: 1.8rem;
+    max-width: 60ch;
+    font-weight: 400;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #4a4642;
+}
+
+.content-text p {
+    margin: 0 0 1.3rem;
+}
+
+/* El primer parrafo hace de entrada, un poco mas grande */
+.content-text p:first-child {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: #33302d;
+}
+
+.content-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Solo lo importante va resaltado */
+.content-text .highlight {
+    font-weight: 600;
+    color: #1f1f1f;
+    background: linear-gradient(to top, rgba(1, 107, 107, 0.2) 35%, transparent 35%);
+    padding: 0 0.15em;
+    border-radius: 2px;
+}
+
+.image-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1rem 0 0.25rem;
+    color: #282828;
+}
+
+.image-role {
+    margin: 0;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7a736c;
 }
 
 /* Animación inicial */
@@ -50,10 +99,20 @@
         justify-content: center;
     }
 
-    .content-text {
+    .title-information {
+        font-size: 2.2rem;
+    }
 
-        width: 70%;
-        text-align: center;
+    .content-text {
+        width: 85%;
+        max-width: none;
+        font-size: 1.05rem;
+        line-height: 1.75;
+        text-align: left;
+    }
+
+    .content-text p:first-child {
+        font-size: 1.15rem;
     }
 
     .image {
