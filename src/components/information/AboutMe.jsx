@@ -1,6 +1,7 @@
 import './aboutMe.css'
 import UseScrollAnimation from '../../hooks/useScrollAnimation';
 import { useLanguage } from '../../i18n/LanguageContext';
+import programacion from '../../assets/programacion.png';
 
 // Convierte el texto marcado con **...** en fragmentos resaltados
 function renderHighlights(text) {
@@ -19,7 +20,7 @@ function aboutMe() {
             <div className={`content-information ${isVisible ? 'visible' : ''}`}
                 ref={elementRef}>
                 <div className='image'>
-                    <img src="/photos/rainbow-high-quality-4k-ultra-hd-hdr-free-photo.jpg" alt="" className="fade-in-image" />
+                    <img src={programacion} alt="" className="fade-in-image" />
                     <p className='image-name'>Andrea Dominguez</p>
                     <p className='image-role'>{t.aboutMe.role}</p>
                 </div>
