@@ -44,10 +44,12 @@
             "CSS",
             "Ruby on Rails"
         ],
+
         "description": {
-            "en": "This project is a landing page about gaming solutions, it was built with wordpress and saving images in cloudinary.",
-            "es": "Este proyecto es una landing page sobre soluciones de gaming, construida con WordPress y guardando las imágenes en Cloudinary."
+            "en": "A web application for package inventory management, tracking, and consolidated summaries, featuring persistent data storage to ensure accurate and reliable information.",
+            "es": "Aplicación web para la gestión y control de inventario de paquetes, con seguimiento y resúmenes consolidados, implementando persistencia de datos para garantizar información precisa y confiable."
         },
+
         "linkGit": "",
         "linkWeb": "https://packtrack.site/"
     },
